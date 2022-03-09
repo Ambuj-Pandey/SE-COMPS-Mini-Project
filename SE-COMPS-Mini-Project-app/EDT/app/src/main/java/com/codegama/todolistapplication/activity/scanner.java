@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ import com.google.zxing.integration.android.IntentResult;
 // implements onClickListener for the onclick behaviour of button
 public class scanner extends AppCompatActivity implements View.OnClickListener {
     Button Scan;
+    EditText GPD;
     TextView messageText, messageFormat;
 
     @Override
@@ -64,5 +66,29 @@ public class scanner extends AppCompatActivity implements View.OnClickListener {
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
+        String Pid = messageText.getText().toString();
+        switch (Pid)
+        {
+            case "696969":
+                GPD = (EditText)findViewById(R.id.getContentsPD);
+                GPD.setText("Masala");
+                GPD = (EditText)findViewById(R.id.getContentsMD);
+                GPD.setText("10-04-2021");
+                GPD = (EditText)findViewById(R.id.getContentsED);
+                GPD.setText("10-04-2022");
+                break;
+
+            case "8008":
+                GPD = (EditText)findViewById(R.id.getContentsPD);
+                GPD.setText("Milk");
+                GPD = (EditText)findViewById(R.id.getContentsMD);
+                GPD.setText("10-04-2020");
+                GPD = (EditText)findViewById(R.id.getContentsED);
+                GPD.setText("18-11-2022");
+
+
+        }
+
+
     }
 }

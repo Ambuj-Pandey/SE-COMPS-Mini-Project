@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E.D.T</string>
+    <string name="delete_confirmation">Confirmation</string>
+    <string name="sureToDelete">Are you sure you want to delete the task</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirmation">Congrats You have saved a product from getting wasted!..</string>
+    <string name="sureToMarkAsComplete">Are you sure you want to mark this reminder as completed.</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Congrats!... You have used the product before the expiry..</string>
+</resources>
